@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <MARCH_SQUARES_INCLUDE>$(SFML_HOME)\include;$(projectdir)..\imgui;$(projectdir)..\imgui-sfml</MARCH_SQUARES_INCLUDE>
+    <MARCH_SQUARES_BIN>$(SFML_HOME)\bin</MARCH_SQUARES_BIN>
+    <MARCH_SQUARES_LIB_DIRS>$(SFML_HOME)\lib</MARCH_SQUARES_LIB_DIRS>
+    <MARCH_SQUARES_LIB_RELEASE>sfml-main.lib;sfml-system.lib;sfml-window.lib;sfml-graphics.lib;Opengl32.lib</MARCH_SQUARES_LIB_RELEASE>
+    <MARCH_SQUARES_LIB_DEBUG>sfml-main-d.lib;sfml-system-d.lib;sfml-window-d.lib;sfml-graphics-d.lib;Opengl32.lib</MARCH_SQUARES_LIB_DEBUG>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="MARCH_SQUARES_INCLUDE">
+      <Value>$(MARCH_SQUARES_INCLUDE)</Value>
+    </BuildMacro>
+    <BuildMacro Include="MARCH_SQUARES_BIN">
+      <Value>$(MARCH_SQUARES_BIN)</Value>
+    </BuildMacro>
+    <BuildMacro Include="MARCH_SQUARES_LIB_DIRS">
+      <Value>$(MARCH_SQUARES_LIB_DIRS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="MARCH_SQUARES_LIB_RELEASE">
+      <Value>$(MARCH_SQUARES_LIB_RELEASE)</Value>
+    </BuildMacro>
+    <BuildMacro Include="MARCH_SQUARES_LIB_DEBUG">
+      <Value>$(MARCH_SQUARES_LIB_DEBUG)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
